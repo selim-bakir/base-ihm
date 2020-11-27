@@ -1,0 +1,23 @@
+/** =================== MONTSERRAT =================== **/
+
+@mixin FontRoboto($weight, $with-italic: 0) {
+    $file-name: 'Roboto';
+    $file-name-italic: 0;
+
+    @if($weight == 400) {
+        $file-name: 'Roboto-Regular';
+        $file-name-italic: 'Roboto-Italic';
+    }
+    @else if($weight == 700) {
+        $file-name: 'Roboto-Bold';
+    }
+
+    @include AddFontFace('Roboto', $weight, $file-name);
+
+    @if($with-italic == 1) {
+        @if $file-name-italic == 0 {
+            $file-name-italic: $file-name + 'Italic';
+        }
+        @include AddFontFace('Roboto', $weight, $file-name-italic, 'italic')
+    }
+}

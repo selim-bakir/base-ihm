@@ -1,0 +1,71 @@
+////// INCLUDE VENDOR IN ALL SCSS FILE ///////
+@import '~vendors-scss/vendor';
+/////////////////////////////////////////////
+
+@import '~assets/scss/fonts/roboto';
+@include FontRoboto(400);
+@include FontRoboto(700);
+
+body{
+   font-family: 'Roboto';
+   font-weight: 500;
+   max-width: 1280px;
+   margin: 0 auto;
+   header{
+      height: 400px;
+      background-color: aquamarine;
+      padding: $gutter*2;
+      font-size: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   main{
+      padding: $gutter*2;
+      .flex-demo{
+         border: 1px dashed red;
+         text-align: center;
+         font-size: 26px;
+         color: whi;
+         padding: $gutter;
+         background-color: black;
+         @media #{$breakpoint-md-up} {
+            font-size: 24px;
+            color: green;
+         }
+         @media #{$breakpoint-lg-up} {
+            font-size: 22px;
+            color: blue;
+         }
+         @media #{$breakpoint-xl-up} {
+            color: red;
+         }
+         &.spacer{
+            padding: 0;
+            border: 0;
+            margin-top: $gutter*2;
+            background: none;
+            div{
+               border: 1px dashed red;
+               margin: 0;
+               padding: $gutter 0;
+               background-color: white;
+               @media #{$breakpoint-md-up} {
+                  margin: 0 $gutter;
+               }
+            }
+         }
+      }
+   }
+
+   footer{
+      height: 400px;
+      background-color:orange;
+      padding: $gutter*2;
+      font-size: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+}
