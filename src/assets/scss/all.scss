@@ -9,16 +9,24 @@
 body{
    font-family: 'Roboto';
    font-weight: 500;
-   max-width: 1280px;
+   // max-width: 1280px;
    margin: 0 auto;
+   .content-inner{
+      max-width: 1180px;
+      margin:0 auto
+   }
    header{
-      height: 400px;
-      background-color: aquamarine;
-      padding: $gutter*2;
+      // height: 400px;
+      background:url($img-path+'bg-header.jpg') left no-repeat;
+      // padding: $gutter*2;
       font-size: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      // display: flex;
+      background-size: 100%;
+      // justify-content: center;
+      // align-items: center;
+      @media #{$breakpoint-xl-up} {
+         min-height:824px;
+      }
    }
 
    main{
@@ -30,16 +38,19 @@ body{
          color: whi;
          padding: $gutter;
          background-color: black;
-         @media #{$breakpoint-md-up} {
-            font-size: 24px;
-            color: green;
-         }
-         @media #{$breakpoint-lg-up} {
-            font-size: 22px;
-            color: blue;
-         }
+         // @media #{$breakpoint-md-up} {
+         //    font-size: 24px;
+         //    color: green;
+         // }
+         // @media #{$breakpoint-lg-up} {
+         //    font-size: 22px;
+         //    color: blue;
+         // }
          @media #{$breakpoint-xl-up} {
             color: red;
+            header{
+               min-height:824px;
+            }
          }
          &.spacer{
             padding: 0;
