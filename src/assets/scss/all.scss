@@ -3,8 +3,11 @@
 /////////////////////////////////////////////
 
 @import '~assets/scss/fonts/roboto';
+@import '~assets/scss/fonts/icomoon';
+@import '~assets/scss/partials/donations';
 @include FontRoboto(400);
 @include FontRoboto(700);
+@include FontIcomoon(700);
 
 body{
    font-family: 'Roboto';

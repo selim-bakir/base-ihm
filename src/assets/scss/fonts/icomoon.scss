@@ -1,0 +1,8 @@
+/** =================== MONTSERRAT =================== **/
+
+@mixin FontIcomoon($weight, $with-italic: 0) {
+    $file-name: 'icomoon';
+
+    @include AddFontFace('icomoon', $weight, $file-name);
+
+}

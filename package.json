@@ -72,6 +72,7 @@
     "flexboxgrid": "^6.3.1",
     "fs": "0.0.1-security",
     "jquery": "^3.4.1",
+    "jquery-inview": "^1.1.2",
     "jshint": "^2.10.3",
     "swiper": "^5.4.5"
   }

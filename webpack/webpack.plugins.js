@@ -19,6 +19,16 @@ module.exports = [
         template: 'src/index.html',
         chunks: ['all']
     }),
+    new HtmlWebpackPlugin({
+        filename: 'donations.html',
+        template: 'src/donations.html',
+        chunks: ['all']
+    }),
+    new HtmlWebpackPlugin({
+        filename: 'chiffres.html',
+        template: 'src/chiffres.html',
+        chunks: ['all']
+    }),
     new PreloadWebpackPlugin({
         rel: 'preload',
         as(entry) {
