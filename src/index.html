@@ -7,10 +7,18 @@
 <!--<![endif]-->
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71695157-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-71695157-1');
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ihm Base</title>
-    <meta name="description" content="#########################">
+    <title>Soutenons ceux qui prennent soin de nous</title>
+    <meta name="description" content="Découvrez comment soutenir les équipes hospitalières de l’AP-HP">
     <meta name="keyword"content="#############################" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -20,89 +28,197 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <header class="section1">
-        <div class="content-inner">
-            <div class="row between">
+        <div class="container">
+            <div class="row between container-top">
                 <div>
                     <img src="./assets/images/logo.png" alt="logo fondation ap-hp">
                 </div>
-                <div>
-                    <a href="https://www.facebook.com/FondationRecherc
-                    he/" target="_blank"><img src="./assets/images/fb.svg" alt="logo facebook"></a>
+                <div class="share">
+                    <a href="https://www.facebook.com/FondationRecherche/" target="_blank"><img src="./assets/images/fb.svg" alt="logo facebook"></a>
                     <a href="https://twitter.com/FondationAPHP" target="_blank"><img src="./assets/images/tw.svg" alt="logo twitter"></a>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <h1 class="title"><span>Soutenons ceux</span><span>qui prennent soin de nous !</span></h1>
-                    <div class="sub-title"><span>Améliorons la qualité de vie</span><br><span>à l’hôpital des patients</span><br><span>et des soignants.</span></div>
+            <div class="row between">
+                <div class="block-title">
+                    <h1 class="title-page"><span>Soutenons ceux</span><br><span>qui prennent soin de nous !</span></h1>
+                    <div class="sub-title-page"><span>Améliorons la qualité de vie</span><br><span>à l’hôpital des patients</span><br><span>et des soignants.</span></div>
+                </div>
+                <div class="blockdon">
+                    <form class="main-screen__donation donation-form">
+                        <div class="container_donation">
+                            <div class="donation-form__items">
+                    
+                                <div class="donation-form__item">
+                                    <div class="i-radio">
+                                        <input type="radio" id="donation-45" name="donation"
+                                            value="45" class="i-radio__input">
+                                        <label for="donation-45" class="i-radio__label">
+                                            <span class="i-radio__label-text">45 <span
+                                                    class="currency">€</span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                    
+                                <div class="donation-form__item">
+                                    <div class="i-radio">
+                                        <input type="radio" id="donation-120" name="donation"
+                                            value="120" class="i-radio__input">
+                                        <label for="donation-120" class="i-radio__label">
+                                            <span class="i-radio__label-text">120 <span
+                                                    class="currency">€</span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                    
+                                <div class="donation-form__item">
+                                    <div class="i-radio">
+                                        <input type="radio" id="donation-250" name="donation"
+                                            value="250" class="i-radio__input">
+                                        <label for="donation-250" class="i-radio__label">
+                                            <span class="i-radio__label-text">250 <span
+                                                    class="currency">€</span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                    
+                    
+                                <div class="donation-form__item">
+                                    <div class="donation-form__input-wrap">
+                                        <div class="donation-form__input-container">
+                                            <input type="text" placeholder="Montant libre" maxlength="7"
+                                                class="donation-form__input">
+                                        </div>
+                                        <!-- <div class="donation-form__input-label currency">€</div> -->
+                                    </div>
+                                </div>
+                    
+                    
+                            </div>
+                    
+                            <div class="donation-form__text">Soit <span
+                                    class="count">……</span> € aprés déduction fiscale
+                            </div>
+                    
+                            <div class="donation-form__actions" data-link="https://soutenir.fondationaphp.fr/ensemble/?amount=">
+                                <a href="https://soutenir.fondationaphp.fr/ensemble" class="cta donation-form__btn" target="_blank"
+                                    title="Je donne">Je donne</a>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </header>
     <div class="section2">
-        <h2>Comment soutenir les équipes AP-HP ?</h2>
-        <div class="spacer col-xs-12 col-lg-3">
-            <p>Appliquez toutes les consignes et les gestes barrières pour freiner la transmission du virus.</p>
-        </div>
-        <div class="spacer col-xs-12 col-lg-3">
-            <div class="title">
-                Je fais un don en ligne 
-            </div>
-            <p>Pour nous permettre de répondre à des besoins concrets sur le terrain</p>
-            <a href="https://soutenir.fondationaphp.fr/ensemble" target="_blank" class="btn btn-don"></a>
-        </div>
-        <div class="spacer col-xs-12 col-lg-3">
-            <div class="title">
-                Je crée ma page de collecte
-            </div>
-            <p>Auprès de vos ami(e)s, vos voisins, vos proches, vos collègues.</p>
-            <a href="https://solidarite.fondationaphp.fr/" target="_blank" class="btn"></a>
-        </div>
-        <div class="spacer col-xs-12 col-lg-3">
-            <div class="title">
-                Diffusez sur vos réseaux 
-            </div>
-            <p>Sensibilisez votre entourage en relayant cet appel</p>
-            <div>Je relaie sur :</div>
-            <a href="https://www.facebook.com/FondationRecherc
-            he/" target="_blank"></a>
-            <a href="https://twitter.com/FondationAPHP" target="_blank"></a>
-        </div>
-    </div>
-    <div class="section3">
-        <h2>Votre don est directement utile aux équipes !</h2>
-        <p>vec la Fondation, vous êtes en lien direct avec les besoins précis des équipes des 39 hôpitaux. Votre don agit directement et rapidement sur le quotidien des équipes et des patients. Trois priorités guident notre action :</p>
-        <div class="tabs"></div>
-        <div>Ensemble, nous avons un impact concret et immédiat</div>
-        <a href="https://soutenir.fondationaphp.fr/ensemble" target="_blank" class="btn btn-don"></a>
-    </div>
-    <div class="section4">
-        <h2>Votre soutien leur donne de la force, de l’énergie</h2>
-    </div>
-    <div class="section5">
-        <div class="row">
-            <div class="col-md-12 col-lg-6">
-                <p>Pourquoi faire appel à votre générosité ?
-                </p>
-                <p>Les dons ne remplaceront jamais les financements publics. Telle n’est pas leur vocation. L’épidémie de Covid-19 a cependant confirmé que de nombreux donateurs, de tous horizons, particuliers, entreprises, fondations, souhaitent aider les équipes de l’AP-HP, exprimant ainsi <span>leur reconnaissance pour celles et ceux qui se dévouent pour la santé de tous.</span></p>
-                <p><span>Grâce à vos dons, nous leurs permettons de faire un pas de plus.</span> Cela peut être un premier pas, pour initier un nouveau projet, ou alors un dernier pas quand il faut en finaliser le déploiement. C’est aussi le pas de côté, quand il faut oser expérimenter sans présager des résultats. <span>Un pas de plus qui, grâce à vous, peut être un pas décisif.</span></p>
-                <div class="row profile">
-                    <div class="col-md-12 col-lg-4">
-                        <img src="" alt="">
+        <div class="container center">
+            <h2>Comment soutenir les équipes AP-HP ?</h2>
+            <div class="row block-column">
+                <div class="spacer col-xs-12 col-lg-3 column">
+                    <div class="colum-inner">
+                        <div class="column-inner-text">
+                            <p>Appliquez toutes les consignes et les gestes barrières pour freiner la transmission du virus.</p>
+                            <div class="column-inner-img">
+                                <img src="./assets/images/picto-col-1.png" alt="Appliquez toutes les consignes">
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-12 col-lg-9">
-                        <p><span>Rodolphe Gouin</span><br>Directeur de la Fondation<br>de l’AP-HP</p>
+                </div>
+                <div class="spacer col-xs-12 col-lg-3 column">
+                    <div class="colum-inner">
+                        <div class="column-inner-text">
+                            <div class="column-inner-img">
+                                <img src="./assets/images/picto-col-2.png" alt="Je fais un don en ligne">
+                            </div>
+                            <div class="column-inner-title">
+                                Je fais un don en ligne 
+                            </div>
+                            <p>Pour nous permettre de répondre à des besoins concrets sur le terrain</p>
+                            <a href="https://soutenir.fondationaphp.fr/ensemble" target="_blank" class="btn btn-don">Je donne</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="spacer col-xs-12 col-lg-3 column">
+                    <div class="colum-inner">
+                        <div class="column-inner-text">
+                            <div class="column-inner-img">
+                                <img src="./assets/images/picto-col-3.png" alt="Je crée ma page de collecte">
+                            </div>
+                            <div class="column-inner-title">
+                                Je crée ma page de collecte
+                            </div>
+                            <p>Auprès de vos ami(e)s, vos voisins, vos proches, vos collègues.</p>
+                            <a href="https://solidarite.fondationaphp.fr/" target="_blank" class="btn">Je collecte</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="spacer col-xs-12 col-lg-3 column">
+                    <div class="colum-inner">
+                        <div class="column-inner-text">
+                            <div class="column-inner-img">
+                                <img src="./assets/images/picto-col-4.png" alt="Diffusez sur vos réseaux">
+                            </div>
+                            <div class="column-inner-title">
+                                Diffusez sur vos réseaux 
+                            </div>
+                            <p>Sensibilisez votre entourage en relayant cet appel</p>
+                            <div>Je relaie sur :</div>
+                            <a href="https://www.facebook.com/FondationRecherc
+                            he/" target="_blank"><img src="./assets/images/picto-col-facebook.png" alt="logo facebook"></a>
+                            <a href="https://twitter.com/FondationAPHP" target="_blank"><img src="./assets/images/picto-col-twitter.png" alt="logo twitter"></a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-12 col-lg-6">
-                <p>Chaque soutien compte,<br>il n’y a pas de petit don.</p>
-                <p>Votre don est important pour agir<br>aux côtés des équipes de l’AP-HP.</p>
-                <h2>Faites votre don<br>avant le 31 décembre 2020</h2>
-                <p>66% du montant de votre don pour<br>la Fondation de l’AP-HP est déductible <br>de votre impôt sur le revenu dans<br>la limite de 20% de votre revenu imposable.</p>
-                <p>Un don de 200 € vous revient à 68€</p>
-                <p>Merci pour votre solidarité avec<br>les équipes de l’AP-HP</p>
-                <a href="https://soutenir.fondationaphp.fr/ensemble" target="_blank" class="btn btn-don"></a>
+        </div>
+    </div>
+    <div class="section3">
+        <div class="container center">
+            <h2>Votre don est directement utile aux équipes !</h2>
+            <p>vec la Fondation, vous êtes en lien direct avec les besoins précis des équipes des 39 hôpitaux. Votre don agit directement et rapidement sur le quotidien des équipes et des patients. Trois priorités guident notre action :</p>
+            <div class="tabs"></div>
+            <div>Ensemble, nous avons un impact concret et immédiat</div>
+            <div class="block-btn">
+                <a href="https://soutenir.fondationaphp.fr/ensemble" target="_blank" class="btn btn-don">Je fais un don</a>
+            </div>
+        </div>
+    </div>
+    <div class="section4">
+        <div class="container center">
+            <h2>Votre soutien leur donne de la force, de l’énergie</h2>
+            <div class="block-team">
+                <img src="./assets/images/team.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="section5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-6">
+                    <div class="testimony">
+                        <p>Pourquoi faire appel à votre générosité ?</p>
+                        <p>Les dons ne remplaceront jamais les financements publics. Telle n’est pas leur vocation. L’épidémie de Covid-19 a cependant confirmé que de nombreux donateurs, de tous horizons, particuliers, entreprises, fondations, souhaitent aider les équipes de l’AP-HP, exprimant ainsi <span>leur reconnaissance pour celles et ceux qui se dévouent pour la santé de tous.</span></p>
+                        <p><span>Grâce à vos dons, nous leurs permettons de faire un pas de plus.</span> Cela peut être un premier pas, pour initier un nouveau projet, ou alors un dernier pas quand il faut en finaliser le déploiement. C’est aussi le pas de côté, quand il faut oser expérimenter sans présager des résultats. <span>Un pas de plus qui, grâce à vous, peut être un pas décisif.</span></p>
+                        <div class="row profile">
+                            <div class="col-md-12 col-lg-4">
+                                <img src="" alt="">
+                            </div>
+                            <div class="col-md-12 col-lg-9">
+                                <p><span>Rodolphe Gouin</span><br>Directeur de la Fondation<br>de l’AP-HP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6">
+                    <div class="center">
+                        <p>Chaque soutien compte,<br>il n’y a pas de petit don.</p>
+                        <p>Votre don est important pour agir<br>aux côtés des équipes de l’AP-HP.</p>
+                        <h2>Faites votre don<br>avant le 31 décembre 2020</h2>
+                        <p>66% du montant de votre don pour<br>la Fondation de l’AP-HP est déductible <br>de votre impôt sur le revenu dans<br>la limite de 20% de votre revenu imposable.</p>
+                        <p>Un don de 200 € vous revient à 68€</p>
+                        <p>Merci pour votre solidarité avec<br>les équipes de l’AP-HP</p>
+                        <a href="https://soutenir.fondationaphp.fr/ensemble" target="_blank" class="btn btn-don"></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
