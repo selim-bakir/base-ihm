@@ -12,7 +12,7 @@
 body{
    background: $secondary-color;
    font-family: 'Roboto';
-   font-weight: 500;
+   font-weight: 700;
    // max-width: 1280px;
    margin: 0 auto;
    *{
@@ -213,7 +213,7 @@ body{
       background:url($img-path+'bg-section5.jpg') no-repeat;
       background-size: 100%;
       @media #{$breakpoint-xl-up} {
-         height: 956px;
+         height: 947px;
       }
       .container{
          @media #{$breakpoint-xl-up} {
@@ -223,12 +223,48 @@ body{
             @media #{$breakpoint-xl-up} {
                max-width: 496px;
             }
-            p{
-               text-align: justify;
-               &:not(:last-child){
-                  margin-bottom: $gutter*2;
+            .text{
+               color: #646464;
+               p{
+                  text-align: justify;
+                  &:not(:last-child){
+                     margin-bottom: $gutter*2;
+                  }
+                  &:last-child{
+                     margin: 0 0 72px;
+                  }
+                  span{
+                     color: $business-color;
+                  }
+               } 
+            }
+            .profile-details{
+               @media #{$breakpoint-xl-up} {
+                  display: flex;
+                  align-items:center;
+                  padding-left:$gutter*2;
                }
-            } 
+            }
+         }
+         .details-don{
+            color: $secondary-color;
+            p, h2{
+               margin-bottom: $gutter*2;
+            }
+            .bnt-content{
+               max-width: 268px;
+               margin:0 auto;
+            }
+         }
+      }
+   }
+   .section6{
+      background: #c6b8a8;
+      color:$secondary-color;
+      .container{
+         padding: 144px 0;
+         h2{
+            margin-bottom: 45px;
          }
       }
    }
@@ -271,12 +307,12 @@ body{
    }
 
    footer{
-      height: 400px;
-      background-color:orange;
-      padding: $gutter*2;
-      font-size: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      // height: 400px;
+      // background-color:orange;
+      // padding: $gutter*2;
+      // font-size: 40px;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
    }
 }
