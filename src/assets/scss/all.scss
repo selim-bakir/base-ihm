@@ -460,6 +460,10 @@ body{
              .swiper-button-next, .swiper-button-prev{
                 height: 25px;
                 width: 26px;
+                display: none;
+                @media #{$breakpoint-xl-up} {
+                  display: block;
+               }
                 &:after{
                   display: none;
                }
