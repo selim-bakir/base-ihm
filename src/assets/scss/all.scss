@@ -140,9 +140,9 @@ body{
                padding:10px $gutter/2;
                display: inline-block;
                font-size: 22px;
-            }
-            @media #{$breakpoint-xl-up} {
-               font-size: 2.625rem;
+               @media #{$breakpoint-xl-up} {
+                  font-size: 36px;
+               }
             }
          }
          .sub-title-page{
@@ -235,6 +235,17 @@ body{
                   }
                   .column-inner-text{
                      padding: $gutter*2 0 0;
+                     &.first-col{
+                        p{
+                           @media #{$breakpoint-xl-up} {
+                              padding: 0 $gutter*3;
+                              font-size: 18px;
+                           }
+                        }
+                        img{
+                           width: 160px;
+                        }
+                     }
                      @media #{$breakpoint-xl-up} {
                         padding: 70px 0 0;
                      }
@@ -314,7 +325,7 @@ body{
       }
       .container{
          @media #{$breakpoint-xl-up} {
-            padding-top: 284px;
+            padding-top: 340px;
          }
          padding-top: 840px;
          h2, .sub-title{
@@ -324,10 +335,18 @@ body{
             margin-bottom: $gutter*2;
             @media #{$breakpoint-xl-up} {
                font-size: 2.625rem;
+               
             }
          }
+         // .sub-title{
+         //    &.mW{
+         //       display: flex;
+         //       justify-content: center;
+         //       margin: 0 auto;
+         //    }
+         // }
          p{
-            margin-bottom: $gutter*2;
+            margin-bottom: $gutter/2;
             font-size: 400;
             font-size: 2.25rem;
             @media #{$breakpoint-xl-up} {
@@ -340,6 +359,9 @@ body{
             .btn{
                font-weight: 700;
             }
+         }
+         .sub-title{
+            margin-top: $gutter*3;
          }
       }
    }

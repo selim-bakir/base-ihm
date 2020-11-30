@@ -15,6 +15,7 @@
 	border-radius: 5px;
 	@media #{$breakpoint-xl-up} {
 		width: 420px;
+		max-width: none;
 	}
 }
 
@@ -255,7 +256,9 @@
 	left: -100px;
 	opacity: 0;
 }
-
+.i-radio__input{
+	pointer-events: none;
+}
 .i-radio__input:checked + label {
 	.i-radio__label-box:before,
 	.i-checkbox__label-box:before {
