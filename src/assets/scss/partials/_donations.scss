@@ -5,25 +5,32 @@
 .donation-form {
 	background: #fff;
 	color: $primary-color;
-	// width: 420px;
+	max-width: 320px;
+	width: 100%;
 	font-size: 15px;
 	padding: $gutter;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	border-radius: 5px;
+	@media #{$breakpoint-xl-up} {
+		width: 420px;
+	}
 }
 
 .donation-form__text {
 	text-align: center;
-	padding: 25px 0;
+	padding: 18px 26px;
 	font-weight: 600;
 	font-family: "Montserrat";
+	@media #{$breakpoint-xl-up} {
+		padding: 25px 0;
+	}
 }
 
 .donation-form__actions {
 	text-align: center;
-	padding-bottom: 43px;
+	// padding-bottom: 43px;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -38,7 +45,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 80px;
+	// height: 80px;
 	width: 100%;
 }
 
@@ -47,15 +54,18 @@
 	text-align: center;
 	position: relative;
 	margin: 5px;
-	max-width: 80px;
-	min-width: 80px;
+	max-width: 70px;
+	min-width: 70px;
 	border: 1px solid $primary-color;
 	border-radius: 5px;
 	height: 40px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
+	@media #{$breakpoint-xl-up} {
+		max-width: 80px;
+		min-width: 80px;
+	}
 	&.active {
 		background-color: $primary-color;
 
@@ -72,11 +82,14 @@
 }
 
 .donation-form__input-container {
-	padding: 0 15px;
+	padding: 0 6px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 100%;
+	@media #{$breakpoint-xl-up} {
+		padding: 0 15px;
+	}
 }
 
 .donation-form__input {
@@ -216,8 +229,11 @@
 .i-radio__label-text,
 .i-checkbox__label-text {
 	display: inline-block;
-	font-size: 1.375rem;
+	font-size: 16px;
 	padding: 10px;
+	@media #{$breakpoint-xl-up} {
+		font-size: 1.375rem;
+	}
 }
 
 .i-radio__label-box,

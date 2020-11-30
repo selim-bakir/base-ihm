@@ -20,6 +20,8 @@ body{
    background: $secondary-color;
    font-family: 'Montserrat';
    margin: 0 auto;
+   width: 100%;
+   display: block;
    *{
       box-sizing: border-box;
    }
@@ -36,9 +38,10 @@ body{
       vertical-align: middle;
     }
    .container{
-      max-width: 1180px;
+      // max-width: 1180px;
       padding:0 15px;
       margin:0 auto;
+      width: 100%;
    }
    .right{
       text-align: right;
@@ -97,12 +100,17 @@ body{
       }
    }
    header{
-      background:url($img-path+'bg-header.jpg') no-repeat;
+      width: 100%;
+      background:url($img-path+'bg-header.jpg') center no-repeat;
       background-size: cover;
-      height: 1560px;
+      // height: 1560px;
+      padding-bottom: $gutter;
       .container-top{
          padding-top: $gutter*2;
-         margin-bottom: 140px;
+         margin-bottom: $gutter*2;
+         @media #{$breakpoint-xl-up} {
+            margin-bottom: 140px;
+         }
          .share img{
             transition: transform 0.3s ;
             &:hover{
@@ -120,11 +128,12 @@ body{
          .title-page{
             color:$secondary-color;
             margin-bottom: 30px;
-            font-size: 3.562rem;
+            font-size: 22px;
             span{
                background: $primary-color;
-               padding:10px $gutter;
-               line-height: 1.3;
+               padding:10px $gutter/2;
+               display: inline-block;
+               font-size: 22px;
             }
             @media #{$breakpoint-xl-up} {
                font-size: 2.625rem;
@@ -132,15 +141,14 @@ body{
          }
          .sub-title-page{
             color: $primary-color;
-            font-size: 3.125rem;
+            font-size: 21px;
             margin-bottom: 80px;
+            
             span{
                background: $secondary-color;
                display: inline-block;
                padding:8px $gutter;
-               &:not(:last-child){
-                     margin-bottom: 8px;
-                  }
+               margin-bottom: 8px;
             }
             @media #{$breakpoint-xl-up} {
                font-size: 2.125rem;
@@ -149,7 +157,12 @@ body{
       }
       .blockdon{
          margin: 0 auto;
-         max-width: 420px;
+         // max-width: 420px;
+         display: flex;
+         justify-content: center;
+         @media #{$breakpoint-xl-up} {
+            display: block;
+         }
       }
       @media #{$breakpoint-xl-up} {
          height:824px;
@@ -164,10 +177,13 @@ body{
          height: 470px;
       }
       .container{
-         padding-top: 141px;
+         padding-top: $gutter*2;
+         @media #{$breakpoint-xl-up} {
+            padding-top: 141px;
+         }
          h2{
             color:$primary-color;
-            font-size: 3.562rem;
+            font-size: 22px;
             text-transform: uppercase;
             @media #{$breakpoint-xl-up} {
                font-size: 2.625rem;
@@ -186,11 +202,14 @@ body{
                   color:$primary-color;
                   box-shadow:5px 5px 12px 1px  rgba(0,0,0,0.3);
                   .column-inner-text{
-                     padding-top: 25px;
+                     @media #{$breakpoint-xl-up} {
+                        padding-top: 25px;
+                     }
                   }
                   p{
                      font-weight: 400;
-                     font-size: 1.875em;
+                     font-size: 14px;
+                     padding: 0 $gutter;
                      @media #{$breakpoint-xl-up} {
                         font-size: 1rem;
                      }
@@ -208,7 +227,10 @@ body{
                      line-height: 1.3;
                   }
                   .column-inner-text{
-                     padding: 70px 0 0;
+                     padding: $gutter*2 0 0;
+                     @media #{$breakpoint-xl-up} {
+                        padding: 70px 0 0;
+                     }
                   }
                }
             }
@@ -231,14 +253,22 @@ body{
                   padding-bottom: 40px;
                   .column-inner-img{
                      margin-bottom: 21px;
+                     img{
+                        width: 50%;
+                        margin-top: $gutter;
+                        @media #{$breakpoint-xl-up} {
+                           width: 100%;
+                           margin: 0;
+                        }
+                     }
                   }
                   .column-inner-title{
                      margin-bottom: 30px;
                      // margin-bottom: 12px;
                      font-weight: 700;
-                     font-size: 2.312rem;
+                     font-size: 14px;
                      padding: 0 $gutter;
-                     word-spacing: -.1ch;
+                     text-transform: uppercase;
                      @media #{$breakpoint-xl-up} {
                         font-size: 1.25rem;
                         padding: 0 $gutter*2;
@@ -246,7 +276,8 @@ body{
                   }
                   p{
                      margin-bottom: 29px;
-                     padding: 0 $gutter*2;
+                     padding: 0 $gutter;
+                     font-size: 15px;
                   }
                   .picto-whatsapp{
                      display: inline-block;
@@ -340,7 +371,7 @@ body{
             font-size: 1.562rem;
             .testimony{
                @media #{$breakpoint-xl-up} {
-                  max-width: 496px;
+                  // max-width: 496px;
                }
                .text{
                   color: #646464;
