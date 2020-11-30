@@ -178,7 +178,7 @@ body{
       }
    }
    .section2{
-      height: 723px;
+      height: 320px;
       @media #{$breakpoint-xl-up} {
          height: 470px;
       }
@@ -334,18 +334,30 @@ body{
          height: 1863px;
       }
       .container{
+         padding-top: 715px;
          @media #{$breakpoint-xl-up} {
             padding-top: 340px;
          }
-         padding-top: 840px;
          h2, .sub-title{
             font-weight: 700;
-            font-size: 3.562rem;
             text-transform: uppercase;
             margin-bottom: $gutter*2;
+         }
+         h2{
+            font-size: 25px;
             @media #{$breakpoint-xl-up} {
                font-size: 2.625rem;
                
+            }
+         }
+         .sub-title{
+            font-size: 25px;
+            padding: 0 60px;
+            @media #{$breakpoint-xl-up} {
+               font-size: 2.625rem;
+               span{
+                  display: block;
+               }
             }
          }
          // .sub-title{
@@ -358,7 +370,7 @@ body{
          p{
             margin-bottom: $gutter/2;
             font-size: 400;
-            font-size: 2.25rem;
+            font-size: 22px;
             @media #{$breakpoint-xl-up} {
                font-size: 1.375rem;
             }
@@ -376,13 +388,15 @@ body{
       }
    }
    .section4{
-      height: 1275px;
       .container{
       padding-top: 80px;
+      @media #{$breakpoint-xl-up} {
+         height: 1275px; 
+      }
          h2{
             margin-bottom: 59px;
             color: $business-color;
-            font-size: 3.562rem;
+            font-size: 25px;
             @media #{$breakpoint-xl-up} {
                font-size: 2.625rem;
             }
@@ -465,13 +479,18 @@ body{
       }
    }
    .section5{
-      height: 2682px;
+      max-height: 1245px;
       background:url($img-path+'bg-mobile-section5.jpg') no-repeat;
+      background-size: cover;
       @media #{$breakpoint-xl-up} {
          background:url($img-path+'bg-section5.jpg') no-repeat;
          height: auto;
       }
       .container{
+         padding-top: 50px;
+         @media #{$breakpoint-xl-up} {
+            padding-top:0;
+         }
          .block-testimony,.block-details-don{
             display: flex;
             align-items: center;
@@ -481,13 +500,14 @@ body{
             }
          }
          .block-testimony{
-            height: 1379px;
             font-size: 1.562rem;
             justify-content: center;
+            padding-bottom: 50px;
             @media #{$breakpoint-xl-up} {
                height: 947px;
                padding-right: 55px;
                justify-content: flex-end;
+               padding-bottom: 0;
             }
             .testimony{
                @media #{$breakpoint-xl-up} {
@@ -498,7 +518,7 @@ body{
                   p{
                      text-align: justify;
                      font-weight: 400;
-                     font-size: 2.125rem;
+                     font-size: 16px;
                      @media #{$breakpoint-xl-up} {
                         font-size: 1.25rem;
                      }
@@ -519,6 +539,10 @@ body{
                }
                .profile{
                   justify-content: center;
+                  margin-top: -45px;
+                  @media #{$breakpoint-xl-up} {
+                     margin-top:0;
+                  }
                   .profile-details{
                      display: flex;
                      align-items:center;
@@ -527,7 +551,7 @@ body{
                      @media #{$breakpoint-xl-up} {
                      }
                      p{
-                        font-size: 1.562rem;
+                        font-size: 14px;
                         @media #{$breakpoint-xl-up} {
                            font-size: 1.25rem;
                         }
@@ -541,7 +565,7 @@ body{
             }
          }
          .block-details-don{
-            height: 1305px;
+            height: 570px;
             justify-content: center;
             @media #{$breakpoint-xl-up} {
                height: 947px;
@@ -550,6 +574,7 @@ body{
             }
             .details-don{
                color: $secondary-color;
+               font-size: 18px;
                p, h2{
                   margin-bottom: $gutter*2;
                }
@@ -559,7 +584,6 @@ body{
                p{
                   &:not(.sub-title){
                      font-weight: 400;
-                     font-size:2.312rem;
                      @media #{$breakpoint-xl-up} {
                         font-size: 1.25rem;
                      }
@@ -567,7 +591,6 @@ body{
                }
                h2, .sub-title{
                   font-weight: 700;
-                  font-size: 2.937rem;
                   @media #{$breakpoint-xl-up} {
                      font-size: 1.687rem;
                   }
@@ -658,7 +681,7 @@ body{
       // justify-content: center;
       // align-items: center;
       .footer-top{
-         height: 439px;
+         height: auto;
          @media #{$breakpoint-md-up} {
             height: 229px;
          }
@@ -668,15 +691,29 @@ body{
             align-items: center;
          }
          .container{
-            padding-top: 76px;
+            padding: $gutter*2 0;
             @media #{$breakpoint-md-up} {
                padding: 76px 0 0 0;
             }
             // .footer-logo{
             //    margin-bottom: 48px;
             // }
+            .footer-logo{
+               width: 80%;
+               display: flex;
+               justify-content: center;
+               margin: 0 auto;
+               a{
+                  width: 80%;
+               }
+            }
             .share-logo{
-               margin-bottom: 25px;
+               margin-top: $gutter*2;
+               display: flex;
+               justify-content: center;
+               @media #{$breakpoint-xl-up} {
+                  margin-bottom: 25px;
+               }
                a{
                   img{
                      width: 50px;
@@ -686,11 +723,16 @@ body{
             .footer-link{
                color: #c6b8a8;
                font-weight: 500;
-               font-size: 1.875rem;
+               font-size: 11px;
+               margin-top: $gutter*2;
+               display: flex;
+               justify-content: center;
                @media #{$breakpoint-md-up} {
                   font-size: 16px;
+                  font-size: 1.875rem;
                }
                a{
+                  margin: 0 10px;
                   &:hover{
                      color: $primary-color;
                   }
@@ -701,10 +743,14 @@ body{
       }
       .footer-bottom{
          font-weight: 400;
-         font-size: 17px;
+         font-size: 15px;
          background: $primary-color;
          color: $secondary-color;
-         padding: 43px 0;
+         padding: 30px 0 70px;
+         @media #{$breakpoint-md-up} {
+            padding: 43px 0;
+            font-size: 17px;
+         }
       }
    }
 }
