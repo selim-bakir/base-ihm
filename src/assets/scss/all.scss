@@ -190,7 +190,7 @@ body{
          }
          h2{
             color:$primary-color;
-            font-size: 22px;
+            font-size: 25px;
             text-transform: uppercase;
             @media #{$breakpoint-xl-up} {
                font-size: 2.625rem;
@@ -198,8 +198,11 @@ body{
          }
          .block-column{
             position:relative;
-            top:76px;
+            top:50px;
             z-index: 5;
+            @media #{$breakpoint-xl-up} {
+               top:76px;
+            }
          }
          .column{
             margin-bottom: 65px;
@@ -432,12 +435,15 @@ body{
          .block-testimony{
             height: 1379px;
             font-size: 1.562rem;
+            justify-content: center;
             @media #{$breakpoint-xl-up} {
                height: 947px;
+               padding-right: 55px;
+               justify-content: flex-end;
             }
             .testimony{
                @media #{$breakpoint-xl-up} {
-                  // max-width: 496px;
+                  max-width: 500px;
                }
                .text{
                   color: #646464;
@@ -491,11 +497,16 @@ body{
             justify-content: center;
             @media #{$breakpoint-xl-up} {
                height: 947px;
+               padding-left: 55px;
+               justify-content: flex-start;
             }
             .details-don{
                color: $secondary-color;
                p, h2{
                   margin-bottom: $gutter*2;
+               }
+               h2{
+                  text-transform: none;
                }
                p{
                   &:not(.sub-title){
@@ -604,20 +615,37 @@ body{
             height: 229px;
          }
          text-align: center;
+         .flex-center{
+            display: flex;
+            align-items: center;
+         }
          .container{
             padding-top: 76px;
-            .footer-logo{
-               margin-bottom: 48px;
+            @media #{$breakpoint-md-up} {
+               padding: 76px 0 0 0;
             }
+            // .footer-logo{
+            //    margin-bottom: 48px;
+            // }
             .share-logo{
                margin-bottom: 25px;
+               a{
+                  img{
+                     width: 50px;
+                  }
+               }
             }
             .footer-link{
                color: #c6b8a8;
                font-weight: 500;
                font-size: 1.875rem;
                @media #{$breakpoint-md-up} {
-                  font-size: 1.375rem;
+                  font-size: 16px;
+               }
+               a{
+                  &:hover{
+                     color: $primary-color;
+                  }
                }
                
             }
@@ -625,7 +653,7 @@ body{
       }
       .footer-bottom{
          font-weight: 400;
-         font-size: 1.875rem;
+         font-size: 17px;
          background: $primary-color;
          color: $secondary-color;
          padding: 43px 0;
