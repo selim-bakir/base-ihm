@@ -29,6 +29,7 @@ body{
    }
    h2{
       font-weight: 700;
+      text-transform: uppercase;
    }
    img {
       max-width: 100%;
@@ -168,7 +169,6 @@ body{
          h2{
             color:$primary-color;
             font-size: 3.562rem;
-            text-transform: uppercase;
             @media #{$breakpoint-xl-up} {
                font-size: 2.625rem;
             }
@@ -238,10 +238,14 @@ body{
                      font-weight: 700;
                      font-size: 2.312rem;
                      padding: 0 $gutter;
+                     text-transform: uppercase;
                      word-spacing: -.1ch;
                      @media #{$breakpoint-xl-up} {
                         font-size: 1.25rem;
                         padding: 0 $gutter*2;
+                     }
+                     &.sub-title{
+                        text-transform: none;
                      }
                   }
                   p{
@@ -310,7 +314,6 @@ body{
             margin-bottom: 59px;
             color: $business-color;
             font-size: 3.562rem;
-            text-transform: uppercase;
             @media #{$breakpoint-xl-up} {
                font-size: 2.625rem;
             }
@@ -325,19 +328,23 @@ body{
       background:url($img-path+'bg-mobile-section5.jpg') no-repeat;
       @media #{$breakpoint-xl-up} {
          background:url($img-path+'bg-section5.jpg') no-repeat;
-         height: 947px;
+         height: auto;
       }
       .container{
-         @media #{$breakpoint-xl-up} {
-            padding-top: 162px;
-         }
          .block-testimony,.block-details-don{
             display: flex;
             align-items: center;
+            @media #{$breakpoint-xl-up} {
+               align-items: start;
+               padding-top: 162px;
+            }
          }
          .block-testimony{
             height: 1379px;
             font-size: 1.562rem;
+            @media #{$breakpoint-xl-up} {
+               height: 947px;
+            }
             .testimony{
                @media #{$breakpoint-xl-up} {
                   max-width: 496px;
@@ -348,6 +355,9 @@ body{
                      text-align: justify;
                      font-weight: 400;
                      font-size: 2.125rem;
+                     @media #{$breakpoint-xl-up} {
+                        font-size: 1.25rem;
+                     }
                      &:first-child{
                         font-weight: 700;
                      }
@@ -374,6 +384,9 @@ body{
                      }
                      p{
                         font-size: 1.562rem;
+                        @media #{$breakpoint-xl-up} {
+                           font-size: 1.25rem;
+                        }
                      }
                      span{
                         color: $primary-color;
@@ -386,6 +399,9 @@ body{
          .block-details-don{
             height: 1305px;
             justify-content: center;
+            @media #{$breakpoint-xl-up} {
+               height: 947px;
+            }
             .details-don{
                color: $secondary-color;
                p, h2{
@@ -394,12 +410,26 @@ body{
                p{
                   &:not(.sub-title){
                      font-weight: 400;
-                     font-size:2.312rem
+                     font-size:2.312rem;
+                     @media #{$breakpoint-xl-up} {
+                        font-size: 1.25rem;
+                     }
                   }
                }
                h2, .sub-title{
                   font-weight: 700;
                   font-size: 2.937rem;
+                  @media #{$breakpoint-xl-up} {
+                     font-size: 1.687rem;
+                  }
+               }
+               .sub-title{
+                  span{
+                     font-weight: 400;
+                  }
+               }
+               .last-sub-title{
+                  font-weight: 400;
                }
                .bnt-content{
                   max-width: 268px;
@@ -420,6 +450,16 @@ body{
          padding: 144px 0;
          h2{
             margin-bottom: 45px;
+            font-size: 2.625rem;
+         }
+         .numbers-block__row{
+            span{
+               font-weight: 700;
+               font-size: 3.562rem;
+            }
+            .numbers-block__text{
+               font-size: 2rem;
+            }
          }
       }
    }
@@ -470,6 +510,9 @@ body{
       // align-items: center;
       .footer-top{
          height: 439px;
+         @media #{$breakpoint-md-up} {
+            height: 229px;
+         }
          text-align: center;
          .container{
             padding-top: 76px;
@@ -483,6 +526,10 @@ body{
                color: #c6b8a8;
                font-weight: 500;
                font-size: 1.875rem;
+               @media #{$breakpoint-md-up} {
+                  font-size: 1.375rem;
+               }
+               
             }
          }
       }
