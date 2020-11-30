@@ -1,5 +1,6 @@
 import Swiper from 'swiper';
 import 'jquery-inview';
+import 'jquery-ui/ui/widgets/tabs';
 
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
@@ -16,6 +17,10 @@ var swiper = new Swiper('.swiper-container', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+$( function() {
+  $( "#tabs" ).tabs();
+} );
 
 function renderLink(count) {
     return $('.donation-form__actions').attr('data-link') + count;

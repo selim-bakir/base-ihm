@@ -6,6 +6,7 @@
 @import '~assets/scss/fonts/montserrat';
 @import '~assets/scss/fonts/icomoon';
 @import '~assets/scss/partials/donations';
+@import '~assets/scss/tabs/tabs';
 @include FontRoboto(400);
 @include FontRoboto(700);
 @include FontIcomoon(700);
@@ -15,7 +16,6 @@
 @include FontMontserrat(600);
 @include FontMontserrat(700);
 @include FontMontserrat(900);
-
 body{
    background: $secondary-color;
    font-family: 'Montserrat';
