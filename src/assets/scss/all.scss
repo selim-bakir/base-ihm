@@ -180,12 +180,12 @@ body{
    .section2{
       height: 320px;
       @media #{$breakpoint-xl-up} {
-         height: 470px;
+         height: 400px;
       }
       .container{
          padding-top: $gutter*2;
          @media #{$breakpoint-xl-up} {
-            padding-top: 141px;
+            padding-top: 75px;
          }
          h2{
             color:$primary-color;
@@ -336,7 +336,7 @@ body{
       .container{
          padding-top: 715px;
          @media #{$breakpoint-xl-up} {
-            padding-top: 340px;
+            padding-top: 285px;
          }
          h2, .sub-title{
             font-weight: 700;
@@ -686,22 +686,17 @@ body{
       // align-items: center;
       .footer-top{
          height: auto;
-         @media #{$breakpoint-md-up} {
-            height: 229px;
-         }
          text-align: center;
          .flex-center{
             display: flex;
             align-items: center;
+            padding: $gutter*2;
          }
          .container{
             padding: $gutter*2 0;
             @media #{$breakpoint-md-up} {
-               padding: 76px 0 0 0;
+               padding: 0;
             }
-            // .footer-logo{
-            //    margin-bottom: 48px;
-            // }
             .footer-logo{
                width: 80%;
                display: flex;
@@ -711,14 +706,23 @@ body{
                   width: 80%;
                }
             }
+            .footer-social{
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: center;
+               @media #{$breakpoint-xl-up} {
+                  justify-content: flex-end;
+               }
+            }
             .share-logo{
                margin-top: $gutter*2;
                display: flex;
                justify-content: center;
                @media #{$breakpoint-xl-up} {
-                  margin-bottom: 25px;
+                  margin-bottom: 0;
                }
                a{
+                  margin-left: $gutter/2;
                   img{
                      width: 50px;
                   }
@@ -731,9 +735,8 @@ body{
                margin-top: $gutter*2;
                display: flex;
                justify-content: center;
-               @media #{$breakpoint-md-up} {
+               @media #{$breakpoint-xl-up} {
                   font-size: 16px;
-                  font-size: 1.875rem;
                }
                a{
                   margin: 0 10px;
