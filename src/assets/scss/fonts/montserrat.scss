@@ -21,4 +21,5 @@
     @else if($weight == 900) {
         $file-name: 'Montserrat-ExtraBold';
     }
+    @include AddFontFace('Montserrat', $weight, $file-name);
 }
