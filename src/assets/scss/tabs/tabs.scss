@@ -1,6 +1,10 @@
 .section3{ 
     .container{
         .block-tabs{
+            display: none;
+            @media #{$breakpoint-xl-up} {
+                display: block;
+             }
             max-width: 1180px;
             margin: 0 auto;
             .ui-widget.ui-widget-content{
