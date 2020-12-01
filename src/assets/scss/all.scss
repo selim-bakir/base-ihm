@@ -277,7 +277,7 @@ body{
                }
                .column-inner-text{
                   margin:0 auto;
-                  padding-bottom: 40px;
+                  padding-bottom: $gutter;
                   .column-inner-img{
                      margin-bottom: 21px;
                      img{
@@ -302,6 +302,12 @@ body{
                      }
                      &.sub-title{
                         text-transform: none;
+                     }
+                     &.noMargin{
+                        margin-bottom: 25px;
+                        @media #{$breakpoint-xl-up} {
+                           margin-bottom: 30px;
+                        }
                      }
                   }
                   p{
@@ -331,6 +337,18 @@ body{
             }
          }
       }
+      .social{
+         display: flex;
+         padding: 0 $gutter;
+         justify-content: center;
+         a{
+            padding: $gutter/3;
+            max-width: 45px;
+            @media #{$breakpoint-xl-up} {
+               max-width: none;
+            }
+         }
+      }
    }
    @media #{$breakpoint-xl-up} {
       .mB1{
@@ -342,15 +360,16 @@ body{
       }
    }
    .section3{
-      background:url($img-path+'bg-section3.jpg') no-repeat;
+      background:url($img-path+'bg-section3.jpg') center bottom no-repeat;
       background-size: cover;
       color:$secondary-color;
-      height: 4691px;
+      padding-bottom: $gutter*2;
       @media #{$breakpoint-xl-up} {
-         height: 1863px;
+         height: 1734px;
+         padding-bottom: 0;
       }
       .container{
-         padding-top: 715px;
+         padding-top: 600px;
          @media #{$breakpoint-xl-up} {
             padding-top: 380px;
          }
@@ -368,9 +387,10 @@ body{
          }
          .sub-title{
             font-size: 25px;
-            padding: 0 60px;
+            padding: 0 $gutter;
             @media #{$breakpoint-xl-up} {
                font-size: 2.625rem;
+               padding: 0 60px;
                span{
                   display: block;
                }
@@ -386,13 +406,14 @@ body{
          p{
             margin-bottom: $gutter/2;
             font-size: 400;
-            font-size: 22px;
+            font-size: 18px;
             @media #{$breakpoint-xl-up} {
                font-size: 1.375rem;
             }
          }
          .slider-tabs{
             display: block;
+            margin: $gutter*4 auto 0;
             @media #{$breakpoint-xl-up} {
                display: none;
             }
@@ -429,8 +450,9 @@ body{
                   color: #646464;
                   font-weight: 400;
                   p{
-                     font-size: 0.687rem;
+                     font-size: 15px;
                      text-align: justify;
+                     line-height: 18px;
                      &:not(:last-child){
                         margin-bottom: $gutter;
                      }
@@ -532,10 +554,19 @@ body{
    }
    .section5{
       max-height: 1245px;
-      background:url($img-path+'bg-mobile-section5.jpg') no-repeat;
+      background:url($img-path+'bg-mobile-section5.jpg') center no-repeat;
       background-size: cover;
+      /* iPad Portrait */
+      @media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+         background-position:  0 -370px;
+      }
+
+      /* iPad Landscape */
+      @media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+         background-position: 0 -710px;
+      }
       @media #{$breakpoint-xl-up} {
-         background:url($img-path+'bg-section5.jpg') no-repeat;
+         background:url($img-path+'bg-section5.jpg') center no-repeat;
          height: auto;
       }
       .container{
@@ -807,8 +838,11 @@ body{
          color: $secondary-color;
          padding: 30px 0 70px;
          @media #{$breakpoint-md-up} {
-            padding: 43px 0;
-            font-size: 17px;
+            padding: 10px 0;
+            font-size: 13px;
+            img{
+               width: 80px;
+            }
          }
       }
    }

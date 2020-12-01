@@ -196,8 +196,13 @@
 		}
 	}
 
+	min-width: 68px;
+	max-width: 68px;
+	@media #{$breakpoint-xl-up} {
+		
 	min-width: 80px;
 	max-width: 80px;
+	}
 }
 
 .i-radio,

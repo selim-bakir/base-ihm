@@ -7,22 +7,19 @@
 <!--<![endif]-->
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71695157-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-71695157-1');
-    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Soutenons ceux qui prennent soin de nous</title>
     <meta name="description" content="Découvrez comment soutenir les équipes hospitalières de l’AP-HP">
-    <meta name="keyword"content="#############################" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://ensemble.fondationrechercheaphp.fr" />
+    <meta property="og:title" content="Soutenons ceux qui prennent soin de nous" />
+    <meta property="og:image" content="http://ensemble.fondationrechercheaphp.fr" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
 </head>
 
 <body>
@@ -104,7 +101,7 @@
                                 </div>
                         
                                 <div class="donation-form__actions" data-link="https://soutenir.fondationaphp.fr/ensemble/?amount=">
-                                    <a href="https://soutenir.fondationaphp.fr/ensemble" class="cta donation-form__btn" target="_blank"
+                                    <a href="https://soutenir.fondationaphp.fr/ensemble?utm_source=landing&utm_medium=landing&utm_campaign=cfa2020&utm_content=boutondon" class="cta donation-form__btn" target="_blank"
                                         title="Je donne">Je donne</a>
                                 </div>
                             </div>
@@ -152,7 +149,7 @@
                                 Je crée ma page de collecte
                             </div>
                             <p class="mB2">Auprès de vos ami(e)s, vos voisins, vos proches, vos collègues.</p>
-                            <a href="https://solidarite.fondationaphp.fr/" target="_blank" class="btn">Je collecte</a>
+                            <a href="https://solidarite.fondationaphp.fr/?utm_source=landing&utm_medium=landing&utm_campaign=cfa2020&utm_content=boutoncollecte" target="_blank" class="btn">Je collecte</a>
                         </div>
                     </div>
                 </div>
@@ -166,11 +163,11 @@
                                 Diffusez sur vos réseaux 
                             </div>
                             <p>Sensibilisez votre entourage en relayant cet appel</p>
-                            <div class="column-inner-title sub-title">Je relaie sur :</div>
+                            <div class="column-inner-title sub-title noMargin">Je relaie sur :</div>
                             <div class="social">
-                                <a href="https://www.facebook.com/FondationRecherche/" target="_blank"><img src="./assets/images/picto-col-facebook.png" alt="logo facebook"></a>
-                                <a href="https://twitter.com/FondationAPHP" target="_blank"><img src="./assets/images/picto-col-twitter.png" alt="logo twitter"></a>
-                                <a class="picto-whatsapp" href="https://wa.me/1XXXXXXXXXX" target="_blank"><img src="./assets/images/picto-mobile-col-what.png" alt="Whatsapp"></a>
+                                <a href="https://www.facebook.com/FondationRecherche/" target="_blank" class="sharing-btn sharing-btn_facebook" data-type="fb"><img src="./assets/images/picto-col-facebook.png" alt="logo facebook"></a>
+                                <a href="https://twitter.com/FondationAPHP" class="sharing-btn sharing-btn_twitter" data-type="tw" target="_blank"><img src="./assets/images/picto-col-twitter.png" alt="logo twitter"></a>
+                                <a class="hide-xl" href="https://wa.me/?text=Soutenons ceux qui prennent soin de nous : http://ensemble.fondationrechercheaphp.fr" data-action="share/whatsapp/share" target="_blank"><img src="./assets/images/picto-mobile-col-what.png" alt="Whatsapp"></a>
                             </div>
                         </div>
                     </div>
@@ -446,7 +443,15 @@
             </div>
         </div>
     </footer>
-    <script src="http://localhost:35729/livereload.js"></script>
+    <!-- <script src="http://localhost:35729/livereload.js"></script> -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71695157-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-71695157-1');
+    </script>
 </body>
 
 </html>

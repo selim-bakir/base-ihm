@@ -4,7 +4,8 @@ import 'jquery-ui/ui/widgets/tabs';
 
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
-  spaceBetween: 30,
+  spaceBetween: 15,
+  loop: true,
   keyboard: {
     enabled: true,
   },
@@ -23,7 +24,7 @@ $( function() {
 } );
 
 function renderLink(count) {
-    return $('.donation-form__actions').attr('data-link') + count;
+    return $('.donation-form__actions').attr('data-link') + count + '?utm_source=landing&utm_medium=landing&utm_campaign=cfa2020&utm_content=boutondon';
 }
 
 function calclatePercent(number) {
@@ -206,4 +207,37 @@ $('.donation-form__input', donationForm).keyup(function (event) {
     }
   });
   
-  
+  $('.sharing-btn').on('click', function (e) {
+
+    e.preventDefault();
+
+    var type = $(this).attr('data-type');
+
+    var url = 'http://ensemble.fondationrechercheaphp.fr';
+    var title = 'Soutenons ceux qui prennent soin de nous';
+
+    var share_url = '';
+
+    switch (type) {
+      case 'fb':
+        share_url = 'https://www.facebook.com/sharer/sharer.php?';
+        share_url += 'u=' + url;
+        break;
+      case 'tw':
+        share_url = 'https://twitter.com/intent/tweet?';
+        share_url += 'text=' + title;
+        share_url += '&url=' + url;
+        break;
+      case 'lin':
+        share_url = 'https://www.linkedin.com/shareArticle?mini=true';
+        share_url += '&title=' + title;
+        share_url += '&url=' + url;
+        share_url += '&source=LinkedIn';
+        break;}
+
+
+    if (share_url != '') {
+      window.open(share_url, '_blank', 'toolbar=0,status=0,resizable=1,menubar=0,scrollbars=1,width=626,height=436,left=100,top=100');
+    }
+
+  });
