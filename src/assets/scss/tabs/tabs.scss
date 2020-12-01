@@ -1,6 +1,6 @@
 .block-tabs{
-    max-width: 1180px;
-    margin: 0 auto;
+    max-width: 1140px;
+    margin: $gutter*4 auto 0;
     .ui-widget.ui-widget-content{
         border: 0;
         padding: 0;
@@ -14,7 +14,7 @@
     }
     .ui-tabs .ui-tabs-nav li{
        margin: 0;
-       width: 376px;
+       width: 365px;
        outline-offset:0;
     }
     .ui-tabs .ui-tabs-nav .ui-tabs-anchor{
@@ -85,7 +85,7 @@
             text-align: left;
             text-transform: uppercase;
             span{
-                padding-right: 70px;
+                padding-right: 50px;
             }
         }
      } 
@@ -101,8 +101,10 @@
      .block-text{
          display: flex;
          flex-direction: column;
+         color: #646464;
+         padding-right: $gutter*2;
          p{
-            font-size: 1.25rem;
+            font-size: 19px;
             font-weight: 400;
             text-align: justify;
              span{
@@ -110,7 +112,12 @@
              }
          }
      }
+     .block-img{
+         img{
+             width: 100%;
+         }
+     }
      .ui-tabs .ui-tabs-panel{
-        padding: 2.8em 1.4em;
+        padding: $gutter*4;
      }
  }

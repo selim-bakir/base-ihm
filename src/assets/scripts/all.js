@@ -43,7 +43,7 @@ $('input[name=donation]', donationForm).on('change', function () {
     $('.count', parent).text(discount);
     if (count) {
         var url = renderLink(count);
-        parent.find('.btn').attr('href', url);
+        parent.find('.donation-form__btn').attr('href', url);
     }
     $('input[name=donation]').parent().parent().removeClass('active');
     $(this).parent().parent().addClass('active');
@@ -78,7 +78,7 @@ $('.donation-form__input', donationForm).on('input', function () {
     $('.count', parent).text(discount);
     if (percent) {
         var url = renderLink(count);
-        parent.find('.btn').attr('href', url);
+        parent.find('.donation-form__btn').attr('href', url);
     }
 });
 
