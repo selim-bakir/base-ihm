@@ -378,7 +378,48 @@ body{
          }
          .slider-tabs{
             .swiper-slide{
-               background: none;
+               height: auto;
+               border-radius: 10px;
+            }
+            .slide-tabs{
+               padding: $gutter;
+               .slide-tabs-top{
+                  color: $primary-color;
+                  font-size: 0.687rem;
+                  p{
+                     font-weight: 700;
+                     text-align: center;
+                     margin-bottom: 20px;
+                     *{
+                        display: inline-block;
+                        text-align: left;
+                        vertical-align: middle;
+                     }
+                     img{
+                        margin-right: 13px;
+                     }
+                     .slide-tabs-title-margin{
+                        margin-top: -30px;
+                     }
+                  }
+               }
+               .slide-tabs-img{
+                  margin-bottom: $gutter;
+               }
+               .slide-tabs-text{
+                  color: #646464;
+                  font-weight: 400;
+                  p{
+                     font-size: 0.687rem;
+                     text-align: justify;
+                     &:not(:last-child){
+                        margin-bottom: $gutter;
+                     }
+                     span{
+                        font-weight: 700;
+                     }
+                  }
+               }
             }
             .swiper-container{
                padding-bottom:50px;

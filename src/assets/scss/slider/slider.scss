@@ -27,9 +27,12 @@
        height: 10px;
        width: 10px;
     }
-    .swiper-pagination-bullet-active{
+    .swiper-pagination-bullet.swiper-pagination-bullet-active{
        background: $business-color;
     }
+    .swiper-pagination-bullet{
+      background: #c6b8a8;
+   }
   }
   .swiper-button-next, .swiper-button-prev{
     display: none;
