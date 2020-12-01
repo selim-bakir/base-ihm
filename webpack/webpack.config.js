@@ -38,7 +38,7 @@ let config = {
     devtool: dev ? 'cheap-eval-source-map' : false,
     devServer: {
         contentBase: path.resolve(__dirname, 'src'),
-        host: 'localhost', 
+        host: 'localhost',
         port: '9000',
         disableHostCheck: false,
         open: true,
