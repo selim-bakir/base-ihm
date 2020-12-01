@@ -377,6 +377,10 @@ body{
             }
          }
          .slider-tabs{
+            display: block;
+            @media #{$breakpoint-xl-up} {
+               display: none;
+            }
             .swiper-slide{
                height: auto;
                border-radius: 10px;
