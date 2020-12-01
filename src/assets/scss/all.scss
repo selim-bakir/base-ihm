@@ -6,6 +6,7 @@
 @import '~assets/scss/fonts/montserrat';
 @import '~assets/scss/fonts/icomoon';
 @import '~assets/scss/partials/donations';
+@import '~assets/scss/tabs/tabs';
 @include FontRoboto(400);
 @include FontRoboto(700);
 @include FontIcomoon(700);
@@ -15,7 +16,6 @@
 @include FontMontserrat(600);
 @include FontMontserrat(700);
 @include FontMontserrat(900);
-
 body{
    background: $secondary-color;
    font-family: 'Montserrat';
@@ -66,7 +66,6 @@ body{
       border-radius: 50px;
       cursor: pointer;
       text-decoration: none;
-      letter-spacing: 2px;
       position: relative;
       overflow: hidden;
       text-transform: uppercase;
@@ -204,7 +203,10 @@ body{
             }
          }
          .column{
-            margin-bottom: 65px;
+            margin-bottom: $gutter*2;
+            @media #{$breakpoint-xl-up} {
+               margin-bottom: 65px;
+            }
             &:not(:first-child){
                .colum-inner{
                   background: $secondary-color;
@@ -223,7 +225,7 @@ body{
                      font-size: 14px;
                      padding: 0 $gutter;
                      @media #{$breakpoint-xl-up} {
-                        font-size: 1rem;
+                        padding: 0 37px;
                      }
                   }
                }
@@ -239,13 +241,17 @@ body{
                      line-height: 1.3;
                   }
                   .column-inner-text{
-                     padding: $gutter*2 0 0;
+                     padding: $gutter*3 0 0;
+                     @media #{$breakpoint-xl-up} {
+                        padding: $gutter*2 0 0;
+                     }
                      &.first-col{
                         p{
-            
+                           font-size: 17px;
                            @media #{$breakpoint-xl-up} {
                               padding: 0 $gutter*3;
                               font-size: 18px;
+                              margin-bottom: 63px;
                            }
                         }
                         img{
@@ -261,17 +267,13 @@ body{
             &:nth-last-child(2) .btn{
                letter-spacing: -1px;
             }
-            // &:not(:last-child){
-            //    .colum-inner{
-            //       @media #{$breakpoint-xl-up} {
-            //          margin:0 1rem 0 0;
-            //       }
-            //    }
-            // }
             .colum-inner{
                border-radius: 5px;
                height: 100% ;
-               margin:0 1rem;
+               margin:0 5px;
+               @media #{$breakpoint-xl-up} {
+                  margin:0 $gutter;
+               }
                .column-inner-text{
                   margin:0 auto;
                   padding-bottom: 40px;
@@ -295,7 +297,7 @@ body{
                      text-transform: uppercase;
                      @media #{$breakpoint-xl-up} {
                         font-size: 1.25rem;
-                        padding: 0 $gutter*2;
+                        padding: 0 $gutter*3;
                      }
                      &.sub-title{
                         text-transform: none;
@@ -304,7 +306,10 @@ body{
                   p{
                      margin-bottom: 29px;
                      padding: 0 $gutter;
-                     font-size: 15px;
+                     @media #{$breakpoint-xl-up} {
+                     font-size: 16px;
+                     padding: 0 37px;
+                     }
                   }
                   .picto-whatsapp{
                      display: inline-block;
@@ -314,15 +319,25 @@ body{
                      }
                   }
                   .btn{
-                     max-width: 145px;
-                     font-size: 15px;
+                     max-width: 120px;
+                     font-size: 13px;
                      @media #{$breakpoint-xl-up} {
-
+                        max-width: 145px;
+                        font-size: 15px;
                      }
                   }
                }
             }
          }
+      }
+   }
+   @media #{$breakpoint-xl-up} {
+      .mB1{
+         margin-bottom: 70px !important;
+      }
+
+      .mB2{
+         margin-bottom: 50px !important;
       }
    }
    .section3{

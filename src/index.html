@@ -22,6 +22,7 @@
     <meta name="keyword"content="#############################" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -117,7 +118,7 @@
         <div class="container center mW">
             <h2>Comment soutenir les équipes AP-HP ?</h2>
             <div class="row between block-column">
-                <div class="spacer col-xs-6 col-lg-3 column">
+                <div class="spacer col-xs-6 col-xl-3 column">
                     <div class="colum-inner">
                         <div class="column-inner-text first-col">
                             <p>Appliquez toutes les consignes et les gestes barrières pour freiner la transmission du virus.</p>
@@ -127,7 +128,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="spacer col-xs-6 col-lg-3 column">
+                <div class="spacer col-xs-6 col-xl-3 column">
                     <div class="colum-inner">
                         <div class="column-inner-text">
                             <div class="column-inner-img">
@@ -136,12 +137,12 @@
                             <div class="column-inner-title">
                                 Je fais un don en ligne 
                             </div>
-                            <p>Pour nous permettre<br />de répondre à des<br />besoins concrets<br />sur le terrain</p>
+                            <p class="mB1">Pour nous permettre<br />de répondre à des<br />besoins concrets<br />sur le terrain</p>
                             <a href="https://soutenir.fondationaphp.fr/ensemble" target="_blank" class="btn btn-don">Je donne</a>
                         </div>
                     </div>
                 </div>
-                <div class="spacer col-xs-6 col-lg-3 column">
+                <div class="spacer col-xs-6 col-xl-3 column">
                     <div class="colum-inner">
                         <div class="column-inner-text">
                             <div class="column-inner-img">
@@ -150,12 +151,12 @@
                             <div class="column-inner-title">
                                 Je crée ma page de collecte
                             </div>
-                            <p>Auprès de vos ami(e)s, vos voisins, vos proches, vos collègues.</p>
+                            <p class="mB2">Auprès de vos ami(e)s, vos voisins, vos proches, vos collègues.</p>
                             <a href="https://solidarite.fondationaphp.fr/" target="_blank" class="btn">Je collecte</a>
                         </div>
                     </div>
                 </div>
-                <div class="spacer col-xs-6 col-lg-3 column">
+                <div class="spacer col-xs-6 col-xl-3 column">
                     <div class="colum-inner">
                         <div class="column-inner-text">
                             <div class="column-inner-img">
@@ -182,8 +183,49 @@
             <p>Avec la Fondation, vous êtes en lien direct avec les besoins précis des équipes des 39 hôpitaux.</p>
             <p>Votre don agit directement et rapidement sur le quotidien des équipes et des patients.</p>
             <p>Trois priorités guident notre action :</p>
-            <div class="tabs"></div>
-            <div class="sub-title">Ensemble, nous avons un impact <span>concret et immédiat</span></div>
+            <div class="block-tabs">
+                <div id="tabs">
+                    <ul class="row between">
+                      <li class="tabs1"><div class="tabs-inner"><a href="#tabs-1"><span>L'humain<br>au c&oelig;ur<br>de l'hopital</span></a></div></li>
+                      <li class="tabs2"><div class="tabs-inner"><a href="#tabs-2"><span>Médecine<br>du futur</span></a></div></li>
+                      <li class="tabs3"><div class="tabs-inner"><a href="#tabs-3"><span>Santé<br>pour tous</span></a></div></li>
+                    </ul>
+                    <div id="tabs-1">
+                        <div class="row between">
+                            <div class="col-lg-6 block-text between">
+                                <p>Nous agissons pour améliorer la qualité de vie à l’hôpital des soignants et des patients :</p>
+                                <p>- <span>Déploiement de COVISIO</span>, système de communication conçu pour permettre aux patients les plus éprouvés de rester en contact avec leurs familles, y compris quand les visites sont interdites.</p>
+                                <p>- Livraison de <span>225 000 plateaux repas de qualité</span> et de centaines de sacs de provisions en avril 2020 pour que les soignants puissent prendre le temps de se reposer.</p>
+                                <p>- <span>Création d’espaces de détente</span> dans chacun des 39 hôpitaux de l’AP-HP, réservés aux équipes hospitalières pour décompresser, s’isoler, ou bénéficier de soins (massages, kiné, etc.)…</p>
+                            </div>
+                            <div class="col-lg-6 block-img"><img src="./assets/images/ilustration1.jpg" alt="L'humain au coeur de l'hopital"></div>
+                        </div>
+                    </div>
+                    <div id="tabs-2">
+                        <div class="row">
+                            <div class="col-lg-6 block-text between">
+                                <p>Nous agissons pour accélérer la recherche menée à l’AP-HP, dans tous les domaines :</p>
+                                <p>- En mars 2020, nous avons contribué au <span>démarrage immédiat de la recherche sur la Covid-19</span> (facteurs de risque, traitements, immunité, etc.) avec déjà des avancées.</p>
+                                <p>- Depuis, nous soutenons des projets de recherche sur la Covid 19 qui n’ont pas reçu de financements publics</p>
+                                <p>- <span>Nous accompagnons près de 200 équipes</span> à l’AP-HP <span>dans de nombreux domaines</span> : épilepsie, maladies neuro-dégénératives, diabétologie, bio impression 3D pour re-fabriquer des organes comme le cœur et l’œsophage, développement de l’intelligence artificielle pour prévenir le rejet du greffon…), etc.</p>
+                            </div>
+                            <div class="col-lg-6 block-img"><img src="./assets/images/ilustration2.jpg" alt="Médecine du futur"></div>
+                        </div>
+                    </div>
+                    <div id="tabs-3">
+                        <div class="row">
+                            <div class="col-lg-6 block-text between">
+                                <p>Nous soutenons les initiatives des équipes de l’AP-HP visant à garantir l’accès aux meilleurs soins possible pour tous les patients, quelle que soit la gravité ou la rareté de leur maladie :</p>
+                                <p>- Nous soutenons de nombreux projets de <span>recherche sur des maladies rares</span>, par exemple les maladies Auto-Inflammatoires, le syndrome de Marfan, le syndrome de Prader-Willi, etc. </p>
+                                <p>- Depuis 2018, nous soutenons un projet de recherche visant à améliorer <span>l’observance thérapeutique chez les jeunes précaires</span> atteints de maladies chroniques.</p>
+                                <p>- Depuis 2018, nous soutenons le projet ComPaRe, <span>Communauté de Patients pour la Recherche</span>, qui permet d’accélérer la recherche sur les maladies chroniques. </p>
+                            </div>
+                            <div class="col-lg-6 block-img"><img src="./assets/images/ilustration3.jpg" alt="Santé pour tous"></div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="sub-title">Ensemble, nous avons un impact<br />concret et immédiat</div>
             <div class="block-btn">
                 <a href="https://soutenir.fondationaphp.fr/ensemble" target="_blank" class="btn btn-don">Je fais un don</a>
             </div>
