@@ -140,7 +140,7 @@ body{
                display: inline-block;
                font-size: 22px;
                @media #{$breakpoint-xl-up} {
-                  font-size: 36px;
+                  font-size: 30px;
                }
             }
          }
@@ -156,7 +156,7 @@ body{
                margin-bottom: 8px;
             }
             @media #{$breakpoint-xl-up} {
-               font-size: 2.125rem;
+               font-size: 30px;
             }
          }
       }
@@ -191,9 +191,6 @@ body{
             color:$primary-color;
             font-size: 25px;
             text-transform: uppercase;
-            @media #{$breakpoint-xl-up} {
-               font-size: 2.625rem;
-            }
          }
          .block-column{
             position:relative;
@@ -251,7 +248,7 @@ body{
                            font-size: 17px;
                            @media #{$breakpoint-xl-up} {
                               padding: 0 $gutter*3;
-                              font-size: 18px;
+                              font-size: 16px;
                               margin-bottom: 63px;
                            }
                         }
@@ -297,7 +294,7 @@ body{
                      padding: 0 $gutter;
                      text-transform: uppercase;
                      @media #{$breakpoint-xl-up} {
-                        font-size: 1.25rem;
+                        font-size: 15px;
                         padding: 0 $gutter*3;
                      }
                      &.sub-title{
@@ -330,7 +327,7 @@ body{
                      font-size: 13px;
                      @media #{$breakpoint-xl-up} {
                         max-width: 145px;
-                        font-size: 15px;
+                        font-size: 13px;
                      }
                   }
                }
@@ -356,7 +353,7 @@ body{
       }
 
       .mB2{
-         margin-bottom: 50px !important;
+         margin-bottom: 70px !important;
       }
    }
    .section3{
@@ -365,13 +362,13 @@ body{
       color:$secondary-color;
       padding-bottom: $gutter*2;
       @media #{$breakpoint-xl-up} {
-         height: 1734px;
+         height: 1140px;
          padding-bottom: 0;
       }
       .container{
          padding-top: 600px;
          @media #{$breakpoint-xl-up} {
-            padding-top: 380px;
+            padding-top: 226px;
          }
          h2, .sub-title{
             font-weight: 700;
@@ -380,10 +377,6 @@ body{
          }
          h2{
             font-size: 25px;
-            @media #{$breakpoint-xl-up} {
-               font-size: 2.625rem;
-               
-            }
          }
          .sub-title{
             font-size: 25px;
@@ -396,19 +389,12 @@ body{
                }
             }
          }
-         // .sub-title{
-         //    &.mW{
-         //       display: flex;
-         //       justify-content: center;
-         //       margin: 0 auto;
-         //    }
-         // }
          p{
             margin-bottom: $gutter/2;
             font-size: 400;
             font-size: 18px;
             @media #{$breakpoint-xl-up} {
-               font-size: 1.375rem;
+               font-size: 18px;
             }
          }
          .slider-tabs{
@@ -483,6 +469,7 @@ body{
          }
          .sub-title{
             margin-top: $gutter*3;
+            font-size: 25px;
          }
       }
    }
@@ -490,14 +477,14 @@ body{
       .container{
       padding-top: 80px;
       @media #{$breakpoint-xl-up} {
-         height: 1275px; 
+         padding-top: 45px;
       }
          h2{
             margin-bottom: 59px;
             color: $business-color;
             font-size: 25px;
             @media #{$breakpoint-xl-up} {
-               font-size: 2.625rem;
+               margin-bottom: 45px;
             }
          }
          
@@ -549,7 +536,7 @@ body{
          }
       }
       @media #{$breakpoint-xl-up} {
-         height: 750px;
+         height: 620px;
       }
    }
    .section5{
@@ -579,7 +566,7 @@ body{
             align-items: center;
             @media #{$breakpoint-xl-up} {
                align-items: start;
-               padding-top: 162px;
+               padding-top: 45px;
             }
          }
          .block-testimony{
@@ -587,7 +574,7 @@ body{
             justify-content: center;
             padding-bottom: 50px;
             @media #{$breakpoint-xl-up} {
-               height: 947px;
+               height: 700px;
                padding-right: 55px;
                justify-content: flex-end;
                padding-bottom: 0;
@@ -651,7 +638,7 @@ body{
             height: 570px;
             justify-content: center;
             @media #{$breakpoint-xl-up} {
-               height: 947px;
+               height: 730px;
                padding-left: 55px;
                justify-content: flex-start;
             }
@@ -668,7 +655,7 @@ body{
                   &:not(.sub-title){
                      font-weight: 400;
                      @media #{$breakpoint-xl-up} {
-                        font-size: 24px;
+                        font-size: 22px;
                         line-height: 27px;
                      }
                   }
@@ -676,7 +663,7 @@ body{
                h2, .sub-title{
                   font-weight: 700;
                   @media #{$breakpoint-xl-up} {
-                     font-size: 1.687rem;
+                     font-size: 22px;
                   }
                }
                .sub-title{
@@ -703,18 +690,27 @@ body{
         display: block;
       }
       .container{
-         padding: 144px 0;
+         padding: 45px 0;
          h2{
             margin-bottom: 45px;
             font-size: 2.625rem;
+            @media #{$breakpoint-xl-up} {
+               font-size: 25px;
+            }
          }
          .numbers-block__row{
             span{
                font-weight: 700;
                font-size: 3.562rem;
+               @media #{$breakpoint-xl-up} {
+                  font-size: 45px;
+               }
             }
             .numbers-block__text{
-               font-size: 2rem;
+               font-size: 25px;
+               @media #{$breakpoint-xl-up} {
+
+               }
             }
          }
       }

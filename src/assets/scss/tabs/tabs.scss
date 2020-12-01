@@ -202,7 +202,7 @@
                      box-shadow:5px -2px 10px 1px  rgba(0,0,0,0.3);
                  }
                 a{
-                    height: 209px;
+                    height: 105px;
                     cursor: pointer;
                     color:$primary-color;
                     background-position: 53px center;
@@ -211,22 +211,30 @@
                     align-items: center;
                     justify-content: flex-end;
                     font-weight: 700;
-                    font-size: 1.25rem;
+                    font-size: 18px;
                     text-align: left;
                     text-transform: uppercase;
+                    display: flex;
+                    justify-content: center;
                     span{
-                        padding-right: 50px;
+                        margin-right: -49px;
                     }
                 }
              } 
              .tabs1 a{
                 background-image: url($img-path+'picto-tabs1.png');
+                background-size: 18%;
+                background-position: 50px 10p
              }
              .tabs2 a{
                 background-image: url($img-path+'picto-tabs2.png');
+                background-size: 22%;
+                background-position: 50px 25px;
              }
              .tabs3 a{
                 background-image: url($img-path+'picto-tabs3.png');
+                background-size: 18%;
+                background-position: 51px 14px;
              }
             //  .block-text{
             //      display: flex;
@@ -245,9 +253,8 @@
          display: flex;
          flex-direction: column;
          color: #646464;
-         padding-right: $gutter*2;
          p{
-            font-size: 19px;
+            font-size: 17px;
             font-weight: 400;
             text-align: justify;
              span{
@@ -256,8 +263,19 @@
          }
      }
              .ui-tabs .ui-tabs-panel{
-                padding: $gutter*4;
+                padding: $gutter*3;
+                img{
+                    width: 75%;
+                }
              }
          }
     }
+    .block-img{
+        display: flex;
+        justify-content: flex-end;
+        img{
+            width: 75%;
+        }
+    }
 }
+
