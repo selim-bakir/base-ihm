@@ -24,7 +24,7 @@ $( function() {
 } );
 
 function renderLink(count) {
-    return $('.donation-form__actions').attr('data-link') + count + '?utm_source=landing&utm_medium=landing&utm_campaign=cfa2020&utm_content=boutondon';
+    return $('.donation-form__actions').attr('data-link') + count + '00&utm_source=landing&utm_medium=landing&utm_campaign=cfa2020&utm_content=boutondon';
 }
 
 function calclatePercent(number) {
@@ -241,3 +241,25 @@ $('.donation-form__input', donationForm).keyup(function (event) {
     }
 
   });
+
+  var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = window.location.search.substring(1),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+        }
+    }
+};
+
+if(getUrlParameter('nom') !== undefined){
+  var name = '<span>';
+      name += getUrlParameter('nom');
+      name += ',</span>';
+  $('.section1 .title-page').prepend(name);
+}

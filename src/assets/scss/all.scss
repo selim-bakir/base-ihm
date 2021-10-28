@@ -80,7 +80,7 @@ body{
          position: absolute;
          height: 100%;
          font-size: 100%;
-         line-height: 3.4;
+         line-height: 50px;
          color: #fff;
          transition: all 0.3s;
          left: 130%;
@@ -106,10 +106,13 @@ body{
    }
    header{
       width: 100%;
-      background:url($img-path+'bg-header.jpg') center no-repeat;
+      background:url($img-path+'bg-header-hd-mobile.jpg') center no-repeat;
       background-size: cover;
       // height: 1560px;
       padding-bottom: $gutter;
+      @media #{$breakpoint-xl-up} {
+         background:url($img-path+'bg-header-hd.jpg') center no-repeat;
+      }
       .container-top{
          padding-top: $gutter*2;
          margin-bottom: $gutter*2;
@@ -357,7 +360,7 @@ body{
       }
    }
    .section3{
-      background:url($img-path+'bg-section3.jpg') center bottom no-repeat;
+      background:url($img-path+'bg-section3.jpg') center top no-repeat;
       background-size: cover;
       color:$secondary-color;
       padding-bottom: $gutter*2;
